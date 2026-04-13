@@ -1,0 +1,73 @@
+ ProxyNetTest 📶  
+Flutter Internet Speed & Network Quality Analyzer
+ProxyNetTest is a Flutter-based mobile application designed to measure real-world internet performance, including download speed, upload speed, ping, and TCP latency. It also provides network quality classification (QoS) and allows users to export results as CSV for further analysis.
+🚀 Features
+- 📥 Download speed measurement  
+- 📤 Upload speed measurement  
+- 📡 Ping test using HTTP requests  
+- 🔌 TCP latency measurement (multi-port testing)  
+- 🌍 User location detection (GPS-based)  
+- 📶 Network type detection (WiFi / Mobile / Ethernet / etc.)  
+- 📊 QoS classification:
+  - 🏅 Excellent
+  - ✅ Good
+  - ⚠️ Fair
+  - ❌ Poor  
+- 🕓 Test history tracking  
+- 💾 Export results to CSV file  
+- 📤 Share CSV via WhatsApp / Email  
+- 🎨 Clean blue-themed UI with real-time updates  
+ 🧠 Technical Highlights
+This project demonstrates practical implementation of:
+- Asynchronous networking in Flutter (HTTP + Socket connections)
+- Real-time state management using StatefulWidget
+- Internet speed measurement using external API integration
+- Custom latency measurement algorithms (HTTP + TCP)
+- Device location handling with permission management
+- Network state detection using connectivity services
+- Local file storage and CSV generation
+- Cross-platform sharing functionality
+
+🛠️ Tech Stack
+- Flutter (Dart)
+- flutter_internet_speed_test
+- http
+- geolocator
+- connectivity_plus
+- permission_handler
+- path_provider
+- csv
+- share_plus
+- open_file
+ App Overview
+ProxyNetTest measures network performance in real-world conditions:
+
+- Speed test uses multi-phase download/upload measurement
+- Ping is calculated using HTTP HEAD requests
+- Latency is measured using TCP socket connection timing
+- Results are averaged over multiple attempts for accuracy
+
+📊 QoS (Quality of Service) Logic
+
+Network quality is categorized based on:
+
+- Download speed (Mbps)
+- Upload speed (Mbps)
+- Ping latency (ms)
+
+ Classification Rules:
+- 🏅 EXCELLENT: High speed + low latency
+- ✅ GOOD: Stable broadband / 4G
+- ⚠️ FAIR: Weak or inconsistent connection
+- ❌ POOR: High latency or very low speed
+
+
+ Data Export
+
+All test results can be:
+- Saved locally as a CSV file
+- Appended to previous results safely (no overwriting)
+- Shared directly via messaging/email apps
+
+ 📸 Screenshots
+> Add screenshots here (important for portfolio)
